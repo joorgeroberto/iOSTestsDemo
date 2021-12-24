@@ -15,6 +15,7 @@
 		93543A292776521E0022A0BA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A272776521E0022A0BA /* AccountViewController.swift */; };
 		93543A2A2776521E0022A0BA /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93543A282776521E0022A0BA /* AccountViewController.xib */; };
 		93543A2C2776537A0022A0BA /* AccountViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A2B277653790022A0BA /* AccountViewModelSpec.swift */; };
+		93543A2E27765CAB0022A0BA /* AccountViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */; };
 		93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB88482773AC2400635CAF /* AppDelegate.swift */; };
 		93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884A2773AC2400635CAF /* SceneDelegate.swift */; };
 		93DB884D2773AC2400635CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884C2773AC2400635CAF /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		93543A272776521E0022A0BA /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		93543A282776521E0022A0BA /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		93543A2B277653790022A0BA /* AccountViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelSpec.swift; sourceTree = "<group>"; };
+		93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewControllerSpec.swift; sourceTree = "<group>"; };
 		93DB88452773AC2400635CAF /* TestsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DB88482773AC2400635CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93DB884A2773AC2400635CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				93201FC52774C07B004A0559 /* StringUtilsSpec.swift */,
 				93FA60832775408000CAD32C /* AccountBalanceSpec.swift */,
 				93543A2B277653790022A0BA /* AccountViewModelSpec.swift */,
+				93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */,
 			);
 			path = TestsDemoTests;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93543A1F277623470022A0BA /* StringUtilsTests.swift in Sources */,
+				93543A2E27765CAB0022A0BA /* AccountViewControllerSpec.swift in Sources */,
 				93DB88602773AC2500635CAF /* TestsDemoTests.swift in Sources */,
 				93201FC62774C07B004A0559 /* StringUtilsSpec.swift in Sources */,
 				93543A2C2776537A0022A0BA /* AccountViewModelSpec.swift in Sources */,
