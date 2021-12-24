@@ -11,6 +11,10 @@
 		93201FC62774C07B004A0559 /* StringUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93201FC52774C07B004A0559 /* StringUtilsSpec.swift */; };
 		933BB7C82774BB56009826EA /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933BB7C72774BB56009826EA /* StringUtils.swift */; };
 		93543A1F277623470022A0BA /* StringUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A1E277623470022A0BA /* StringUtilsTests.swift */; };
+		93543A2427764C410022A0BA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A2327764C410022A0BA /* AccountViewModel.swift */; };
+		93543A292776521E0022A0BA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A272776521E0022A0BA /* AccountViewController.swift */; };
+		93543A2A2776521E0022A0BA /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93543A282776521E0022A0BA /* AccountViewController.xib */; };
+		93543A2C2776537A0022A0BA /* AccountViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A2B277653790022A0BA /* AccountViewModelSpec.swift */; };
 		93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB88482773AC2400635CAF /* AppDelegate.swift */; };
 		93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884A2773AC2400635CAF /* SceneDelegate.swift */; };
 		93DB884D2773AC2400635CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884C2773AC2400635CAF /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 		93201FC52774C07B004A0559 /* StringUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilsSpec.swift; sourceTree = "<group>"; };
 		933BB7C72774BB56009826EA /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		93543A1E277623470022A0BA /* StringUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilsTests.swift; sourceTree = "<group>"; };
+		93543A2327764C410022A0BA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		93543A272776521E0022A0BA /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		93543A282776521E0022A0BA /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		93543A2B277653790022A0BA /* AccountViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelSpec.swift; sourceTree = "<group>"; };
 		93DB88452773AC2400635CAF /* TestsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DB88482773AC2400635CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93DB884A2773AC2400635CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		93543A2027764C270022A0BA /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				93543A2327764C410022A0BA /* AccountViewModel.swift */,
+				93543A272776521E0022A0BA /* AccountViewController.swift */,
+				93543A282776521E0022A0BA /* AccountViewController.xib */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
 		93DB883C2773AC2400635CAF = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +127,7 @@
 		93DB88472773AC2400635CAF /* TestsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				93543A2027764C270022A0BA /* AccountView */,
 				93DB88482773AC2400635CAF /* AppDelegate.swift */,
 				93DB884A2773AC2400635CAF /* SceneDelegate.swift */,
 				93DB884C2773AC2400635CAF /* ViewController.swift */,
@@ -129,6 +148,7 @@
 				93543A1E277623470022A0BA /* StringUtilsTests.swift */,
 				93201FC52774C07B004A0559 /* StringUtilsSpec.swift */,
 				93FA60832775408000CAD32C /* AccountBalanceSpec.swift */,
+				93543A2B277653790022A0BA /* AccountViewModelSpec.swift */,
 			);
 			path = TestsDemoTests;
 			sourceTree = "<group>";
@@ -230,6 +250,7 @@
 			files = (
 				93DB88552773AC2500635CAF /* LaunchScreen.storyboard in Resources */,
 				93DB88522773AC2500635CAF /* Assets.xcassets in Resources */,
+				93543A2A2776521E0022A0BA /* AccountViewController.xib in Resources */,
 				93DB88502773AC2400635CAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				933BB7C82774BB56009826EA /* StringUtils.swift in Sources */,
+				93543A2427764C410022A0BA /* AccountViewModel.swift in Sources */,
+				93543A292776521E0022A0BA /* AccountViewController.swift in Sources */,
 				93DB884D2773AC2400635CAF /* ViewController.swift in Sources */,
 				93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */,
 				93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */,
@@ -327,6 +350,7 @@
 				93543A1F277623470022A0BA /* StringUtilsTests.swift in Sources */,
 				93DB88602773AC2500635CAF /* TestsDemoTests.swift in Sources */,
 				93201FC62774C07B004A0559 /* StringUtilsSpec.swift in Sources */,
+				93543A2C2776537A0022A0BA /* AccountViewModelSpec.swift in Sources */,
 				93FA60842775408000CAD32C /* AccountBalanceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
