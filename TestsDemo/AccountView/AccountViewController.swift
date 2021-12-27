@@ -8,6 +8,7 @@
 import UIKit
 
 class AccountViewController: UIViewController {
+    @IBOutlet weak var instructionLabel: UILabel!
     var viewModel: AccountViewModelProtocol?
     
     override func viewDidLoad() {
@@ -20,6 +21,8 @@ class AccountViewController: UIViewController {
         }, completion: {
             print("Completion")
         })
+        
+        instructionLabel.text = viewModel?.instructionText
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {

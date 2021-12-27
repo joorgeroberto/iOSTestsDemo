@@ -23,6 +23,7 @@
 		93DB88522773AC2500635CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DB88512773AC2500635CAF /* Assets.xcassets */; };
 		93DB88552773AC2500635CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DB88532773AC2500635CAF /* LaunchScreen.storyboard */; };
 		93DB88602773AC2500635CAF /* TestsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB885F2773AC2500635CAF /* TestsDemoTests.swift */; };
+		93EA3A64277A0A6C00B1DED6 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA3A63277A0A6C00B1DED6 /* AccountModel.swift */; };
 		93FA60842775408000CAD32C /* AccountBalanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FA60832775408000CAD32C /* AccountBalanceSpec.swift */; };
 		93FA60862775408E00CAD32C /* AccountBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FA60852775408E00CAD32C /* AccountBalance.swift */; };
 		D77E4457592CF7BCFB7F22C2 /* Pods_TestsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831C82DF23F02802AB41FAA6 /* Pods_TestsDemo.framework */; };
@@ -61,6 +62,7 @@
 		93DB88562773AC2500635CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93DB885B2773AC2500635CAF /* TestsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DB885F2773AC2500635CAF /* TestsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsDemoTests.swift; sourceTree = "<group>"; };
+		93EA3A63277A0A6C00B1DED6 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		93FA60832775408000CAD32C /* AccountBalanceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceSpec.swift; sourceTree = "<group>"; };
 		93FA60852775408E00CAD32C /* AccountBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalance.swift; sourceTree = "<group>"; };
 		AC25813606116D5EC5110571 /* Pods-TestsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestsDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestsDemo/Pods-TestsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				93543A2327764C410022A0BA /* AccountViewModel.swift */,
 				93543A272776521E0022A0BA /* AccountViewController.swift */,
 				93543A282776521E0022A0BA /* AccountViewController.xib */,
+				93EA3A63277A0A6C00B1DED6 /* AccountModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -129,16 +132,15 @@
 		93DB88472773AC2400635CAF /* TestsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				93543A2027764C270022A0BA /* AccountView */,
 				93DB88482773AC2400635CAF /* AppDelegate.swift */,
 				93DB884A2773AC2400635CAF /* SceneDelegate.swift */,
 				93DB884C2773AC2400635CAF /* ViewController.swift */,
-				93FA60852775408E00CAD32C /* AccountBalance.swift */,
+				93EA3A62277A0A2000B1DED6 /* Utils */,
+				93543A2027764C270022A0BA /* AccountView */,
 				93DB884E2773AC2400635CAF /* Main.storyboard */,
 				93DB88512773AC2500635CAF /* Assets.xcassets */,
 				93DB88532773AC2500635CAF /* LaunchScreen.storyboard */,
 				93DB88562773AC2500635CAF /* Info.plist */,
-				933BB7C72774BB56009826EA /* StringUtils.swift */,
 			);
 			path = TestsDemo;
 			sourceTree = "<group>";
@@ -154,6 +156,15 @@
 				93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */,
 			);
 			path = TestsDemoTests;
+			sourceTree = "<group>";
+		};
+		93EA3A62277A0A2000B1DED6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				933BB7C72774BB56009826EA /* StringUtils.swift */,
+				93FA60852775408E00CAD32C /* AccountBalance.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9E950AF70E45C15417B3B528 /* Pods */ = {
@@ -339,6 +350,7 @@
 				933BB7C82774BB56009826EA /* StringUtils.swift in Sources */,
 				93543A2427764C410022A0BA /* AccountViewModel.swift in Sources */,
 				93543A292776521E0022A0BA /* AccountViewController.swift in Sources */,
+				93EA3A64277A0A6C00B1DED6 /* AccountModel.swift in Sources */,
 				93DB884D2773AC2400635CAF /* ViewController.swift in Sources */,
 				93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */,
 				93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */,
@@ -426,6 +438,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -572,6 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2BKJ22455;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

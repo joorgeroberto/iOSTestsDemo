@@ -26,7 +26,7 @@ class AccountViewModelSpec: QuickSpec {
             
             context("Should request location") {
                 it("Use location true") {
-                    sut = AccountViewModel(shouldUseLocation: true)
+                    sut = AccountViewModel(shouldUseLocation: true, model: AccountModel(instruction: ""))
 
                     sut.shouldRequestLocation(showAlert: {
                         showAlert = true
@@ -42,7 +42,7 @@ class AccountViewModelSpec: QuickSpec {
                 }
                 
                 it("Use location false") {
-                    sut = AccountViewModel(shouldUseLocation: false)
+                    sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: ""))
 
                     sut.shouldRequestLocation(showAlert: {
                         showAlert = true
@@ -56,12 +56,29 @@ class AccountViewModelSpec: QuickSpec {
                     expect(askUserPermission).to(equal(false))
                     expect(completion).to(equal(true))
                 }
+                
+                it("LoginButtonTap") {
+                    sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: ""))
+                    expect(sut.loginButtonTap()).to(beVoid())
+                }
             }
             
             context("AccountViewModelProtocol") {
                 it("Verify if implements AccountViewModelProtocol") {
-                    sut = AccountViewModel(shouldUseLocation: true)
+                    sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: ""))
                     expect(sut).to(beAKindOf(AccountViewModelProtocol.self))
+                }
+            }
+            
+            context("Instruction Text") {
+                it("Verify using location") {
+                    sut = AccountViewModel(shouldUseLocation: true, model: AccountModel(instruction: "Hello World"))
+                    expect(sut.instructionText).to(equal("Hello World com localização"))
+                }
+                
+                it("Verify not using location") {
+                    sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: "Hello World"))
+                    expect(sut.instructionText).to(equal("Hello World"))
                 }
             }
         }
