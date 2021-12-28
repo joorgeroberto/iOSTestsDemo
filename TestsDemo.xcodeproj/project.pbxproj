@@ -18,6 +18,8 @@
 		93543A2E27765CAB0022A0BA /* AccountViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */; };
 		93D70239277A65E300570373 /* AsyncProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D70238277A65E300570373 /* AsyncProcess.swift */; };
 		93D7023D277A66A800570373 /* AsyncProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7023C277A66A800570373 /* AsyncProcessTests.swift */; };
+		93D7023F277A87D000570373 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7023E277A87D000570373 /* Provider.swift */; };
+		93D70241277A8AC600570373 /* ProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D70240277A8AC600570373 /* ProviderMock.swift */; };
 		93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB88482773AC2400635CAF /* AppDelegate.swift */; };
 		93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884A2773AC2400635CAF /* SceneDelegate.swift */; };
 		93DB884D2773AC2400635CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB884C2773AC2400635CAF /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewControllerSpec.swift; sourceTree = "<group>"; };
 		93D70238277A65E300570373 /* AsyncProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncProcess.swift; sourceTree = "<group>"; };
 		93D7023C277A66A800570373 /* AsyncProcessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncProcessTests.swift; sourceTree = "<group>"; };
+		93D7023E277A87D000570373 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		93D70240277A8AC600570373 /* ProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderMock.swift; sourceTree = "<group>"; };
 		93DB88452773AC2400635CAF /* TestsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DB88482773AC2400635CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93DB884A2773AC2400635CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +149,6 @@
 				93DB88512773AC2500635CAF /* Assets.xcassets */,
 				93DB88532773AC2500635CAF /* LaunchScreen.storyboard */,
 				93DB88562773AC2500635CAF /* Info.plist */,
-				93D70238277A65E300570373 /* AsyncProcess.swift */,
 			);
 			path = TestsDemo;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				93543A2B277653790022A0BA /* AccountViewModelSpec.swift */,
 				93543A2D27765CAB0022A0BA /* AccountViewControllerSpec.swift */,
 				93D7023C277A66A800570373 /* AsyncProcessTests.swift */,
+				93D70240277A8AC600570373 /* ProviderMock.swift */,
 			);
 			path = TestsDemoTests;
 			sourceTree = "<group>";
@@ -167,8 +171,10 @@
 		93EA3A62277A0A2000B1DED6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				93D70238277A65E300570373 /* AsyncProcess.swift */,
 				933BB7C72774BB56009826EA /* StringUtils.swift */,
 				93FA60852775408E00CAD32C /* AccountBalance.swift */,
+				93D7023E277A87D000570373 /* Provider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 				93DB884D2773AC2400635CAF /* ViewController.swift in Sources */,
 				93DB88492773AC2400635CAF /* AppDelegate.swift in Sources */,
 				93DB884B2773AC2400635CAF /* SceneDelegate.swift in Sources */,
+				93D7023F277A87D000570373 /* Provider.swift in Sources */,
 				93FA60862775408E00CAD32C /* AccountBalance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +378,7 @@
 			files = (
 				93543A1F277623470022A0BA /* StringUtilsTests.swift in Sources */,
 				93543A2E27765CAB0022A0BA /* AccountViewControllerSpec.swift in Sources */,
+				93D70241277A8AC600570373 /* ProviderMock.swift in Sources */,
 				93DB88602773AC2500635CAF /* TestsDemoTests.swift in Sources */,
 				93201FC62774C07B004A0559 /* StringUtilsSpec.swift in Sources */,
 				93543A2C2776537A0022A0BA /* AccountViewModelSpec.swift in Sources */,
